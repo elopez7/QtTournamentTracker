@@ -1,0 +1,5 @@
+import QtQuick
+
+TViewMatchUpComponentForm {
+
+}
