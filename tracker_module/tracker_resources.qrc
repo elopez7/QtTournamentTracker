@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>TournamentsDB.db</file>
+    </qresource>
+</RCC>

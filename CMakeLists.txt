@@ -29,9 +29,11 @@ set_target_properties(appQtTournamentTracker PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 add_subdirectory(content)
+add_subdirectory(tracker_module)
 target_link_libraries(appQtTournamentTracker
     PRIVATE Qt6::Quick
     contentplugin
+    trackerplugin
 )
 
 include(GNUInstallDirs)
