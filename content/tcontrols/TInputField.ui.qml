@@ -32,6 +32,8 @@ RowLayout {
 
     TextField {
         id: textField
+        font.pixelSize: 32
+        verticalAlignment: Text.AlignVCenter
         Layout.preferredWidth: 2
         Layout.fillHeight: true
         Layout.fillWidth: true

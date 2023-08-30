@@ -8,9 +8,18 @@ class TeamDTO;
 
 struct MatchupDTO
 {
-    QList<MatchupEntryDTO> entries;
-    TeamDTO* winner;
+    MatchupDTO(int matchupRound,
+               TeamDTO* winnerTeam,
+               const QList<MatchupEntryDTO>& teamEntries)
+        : matchup_round{matchupRound}
+        , winner{winnerTeam}
+        , entries{teamEntries}
+    {}
+
+    int id;
     int matchup_round;
+    TeamDTO* winner;
+    QList<MatchupEntryDTO> entries;
 };
 
 #endif // MATCHUPDTO_H

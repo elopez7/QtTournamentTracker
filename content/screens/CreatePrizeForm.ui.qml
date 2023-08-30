@@ -12,9 +12,14 @@ import QtQuick.Layouts
 import "../tcontrols"
 import "../tcomponents"
 
+
 Item {
     id: root
     property alias createPrizeButton: createPrizeButton
+    property alias placeNumber: placeNumberField.fieldText
+    property alias placeName: placeNameField.fieldText
+    property alias prizeAmount: prizeAmountField.fieldText
+    property alias prizePercentage: prizePercentageField.fieldText
 
     ColumnLayout {
         id: prizeFormLayout

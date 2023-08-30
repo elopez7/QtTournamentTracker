@@ -6,8 +6,17 @@ class MatchupDTO;
 
 struct MatchupEntryDTO
 {
-    TeamDTO* team_competing;
+    MatchupEntryDTO(double score,
+                    TeamDTO* teamCompeting,
+                    MatchupDTO* parentMatchup)
+        : score{score}
+        , team_competing{teamCompeting}
+        , parent_matchup{parentMatchup}
+    {}
+
+    int id;
     double score;
+    TeamDTO* team_competing;
     MatchupDTO* parent_matchup;
 };
 

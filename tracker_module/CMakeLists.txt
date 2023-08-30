@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.23)
 
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Sql)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Qml Sql)
 
 set(QML_IMPORT_PATH ${QT_QML_OUTPUT_DIRECTORY}
     CACHE STRING "Qt Creator tournament tracker module import path"
@@ -34,5 +34,7 @@ target_include_directories(tracker_module
 )
 
 target_link_libraries(tracker_module
-    PRIVATE Qt6::Core Qt6::Sql
+    PRIVATE Qt6::Core
+    PRIVATE Qt6::Qml
+    PRIVATE Qt6::Sql
 )
