@@ -23,6 +23,8 @@ qt6_add_qml_module(tracker_module
         MatchupEntryDTO.h
         trackerdatabase.h
         trackerdatabase.cpp
+        trackersqlconnector.h
+        trackersqlconnector.cpp
     RESOURCES
         tracker_resources.qrc
 )

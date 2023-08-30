@@ -25,7 +25,6 @@ private:
     QSqlDatabase m_db;
     QString m_database_path;
 
-    void copyDatabaseFileFromQrcToDisk();
     void openDatabase();
     void closeDatabase();
 
